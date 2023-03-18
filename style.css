@@ -41,7 +41,7 @@ header {
 
 .nav-links {
     display: flex;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 6rem;
     text-decoration: none;
 }
@@ -91,7 +91,10 @@ ul li a {
     }
 
     .logo>img {
-        margin-left: 1rem;
+        margin-left: 0;
+        /* margin-right: 2rem; */
+        position: relative;
+        right: 1rem;
     }
 
     ul li {
@@ -104,6 +107,39 @@ ul li a {
     /* .btn-1 {
         margin-right: 10rem;
     } */
+
+
+}
+
+@media only screen and (max-width:480px) {
+    .logo>img {
+        display: none;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    .nav-links {
+        font-size: 14px;
+        /* position: relative;
+        right: 3rem; */
+    }
+
+    header {
+        display: block;
+        text-align: center;
+        height: 6rem;
+
+        /* justify-content: space-between; */
+
+    }
+
+    ul li {
+        margin: 0 30px;
+        display: inline-block;
+
+    }
 
 
 }
