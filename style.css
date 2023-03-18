@@ -1,0 +1,109 @@
+/* fonts */
+/* variables */
+:root {
+    --black-color: #212529;
+    --image-color: #FF9F1C;
+    --button-color: #2EC4B6;
+
+
+}
+
+/* global styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header section including the media queries */
+header {
+    background-color: #FBFCFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 20px 30px;
+    position: sticky;
+    top: 20px;
+    width: 100%;
+}
+
+.logo>img {
+    height: auto;
+    margin-left: 3rem;
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    font-weight: 700;
+    margin-right: 6rem;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 60px;
+}
+
+ul li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.btn-1 {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 18px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 4rem;
+    padding: 8px 20px;
+    transition: ease-out all .2s;
+}
+
+.btn-1:hover {
+    /* color: #fff;
+    background-color: #1A1A1A; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-1:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* tablet view potrait */
+@media only screen and (min-width:480px) and (max-width:834px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        font-size: 14px;
+    }
+
+    .logo>img {
+        margin-left: 1rem;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 0 45px;
+        position: relative;
+        left: .5rem;
+    }
+
+    /* .btn-1 {
+        margin-right: 10rem;
+    } */
+
+
+}
