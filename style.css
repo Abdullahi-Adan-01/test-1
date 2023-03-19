@@ -1,4 +1,9 @@
 /* fonts */
+@font-face {
+    font-family: "Title";
+    src: url(/KGRedHands.ttf);
+}
+
 /* variables */
 :root {
     --black-color: #212529;
@@ -28,9 +33,12 @@ header {
     align-items: center;
     height: 8rem;
     padding: 20px 30px;
-    position: sticky;
-    top: 20px;
+    /* position: sticky;
+    top: 20px; */
     width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+
 }
 
 .logo>img {
@@ -142,4 +150,83 @@ ul li a {
     }
 
 
+}
+
+/* end of header including media queries */
+/* start of hero section including media queries */
+@media only screen and (min-width:1024px) {
+
+    .main-image>img {
+        width: 527px;
+        height: auto;
+        position: relative;
+        left: 116px;
+
+
+    }
+
+    section.hero {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .text-area {
+        width: 455px;
+        height: 303px;
+        position: relative;
+        top: 10rem;
+    }
+
+    .text-area>* {
+        padding: .7rem 0;
+
+    }
+
+    .text-area h1 {
+        font-family: "Title";
+        font-weight: 400;
+        font-size: 2.5rem;
+        width: 350px;
+        line-height: 1.5;
+        letter-spacing: 0.04rem;
+    }
+
+    .text-area p {
+        font-family: 'Comic Sans MS';
+        font-size: .8rem;
+        font-weight: 100;
+        width: 300px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.btn-2 {
+    margin-top: 2rem;
+    width: min-content;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 50px;
+
+    /* gap: 10px; */
+    transition: ease-out all .2s;
+}
+
+.btn-2:hover {
+    /* color: #fff;
+    background-color: #1A1A1A; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-2:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
